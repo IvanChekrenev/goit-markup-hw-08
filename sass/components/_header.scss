@@ -4,10 +4,26 @@
 
 .wrap-header-item {
   display: flex;
+
+  justify-content: space-between;
+
   align-items: center;
 }
 
+.header__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 // header-nav
+
+.header__nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 
 .site-nav__list {
   display: flex;
@@ -61,8 +77,15 @@
 //  Header contact
 
 .header-contact {
-  display: flex;
+  display: none;
+  // display: flex;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .header-mail-icon {
   width: 16px;
@@ -86,8 +109,8 @@
   color: var(--main-text-color);
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -98,5 +121,11 @@
 }
 
 .header-contact__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
 }

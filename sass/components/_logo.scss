@@ -5,8 +5,12 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-logo-color);
-  margin-right: 93px;
+  // margin-right: 93px;
   display: block;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 }
 
 .logo__header {
