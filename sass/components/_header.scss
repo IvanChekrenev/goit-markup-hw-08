@@ -8,6 +8,10 @@
   justify-content: space-between;
 
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
 }
 
 .header__button {
@@ -78,7 +82,7 @@
 
 .header-contact {
   display: none;
-  // display: flex;
+
   margin-left: auto;
   @media screen and (min-width: 768px) {
     display: block;
@@ -118,10 +122,15 @@
   &.header-contact__link:focus {
     color: var(--third-headertext-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-contact__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 12px;
   }
   @media screen and (min-width: 1200px) {
