@@ -12,7 +12,9 @@
   color: #ffffff;
 }
 .subscription__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscription__input {
@@ -45,6 +47,8 @@
 .subscription__button {
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-family: Roboto;
   font-style: normal;
@@ -60,4 +64,15 @@
 
   color: #ffffff;
   background-color: var(--main-logo-color);
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+}
+
+.subscription {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
 }

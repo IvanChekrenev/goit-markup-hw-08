@@ -611,13 +611,35 @@ a {
   margin-right: auto;
 }
 
-.container__footer {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer-all {
+    text-align: center;
+  }
 }
 
-.wrap-logo-addres {
-  margin-right: 63px;
+@media screen and (min-width: 1200px) {
+  .footer-all {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap-logo-addres {
+    margin-right: 63px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrap-logo-addres {
+    margin-left: 61px;
+  }
 }
 
 .adress__text {
@@ -647,8 +669,33 @@ a {
   margin-bottom: 9px;
 }
 
+@media screen and (max-width: 767px) {
+  .adress__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrap-logo-addres__join {
+    display: flex;
+  }
+}
+
 .join {
   margin-right: 93px;
+}
+
+@media screen and (max-width: 767px) {
+  .join {
+    text-align: center;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    margin-left: 165px;
+  }
 }
 
 .join__title {
@@ -660,7 +707,6 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  width: 145px;
   height: 16px;
   color: #ffffff;
 }
@@ -690,8 +736,10 @@ a {
   color: #ffffff;
 }
 
-.subscription__form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    display: flex;
+  }
 }
 
 .subscription__input {
@@ -722,6 +770,8 @@ a {
 .subscription__button {
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -734,6 +784,19 @@ a {
   justify-content: center;
   color: #ffffff;
   background-color: var(--main-logo-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscription__button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscription {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 
 .backdrop {
