@@ -1,8 +1,16 @@
 .filter__list {
   display: flex;
   background: #ffffff;
-  justify-content: center;
+
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__item {
