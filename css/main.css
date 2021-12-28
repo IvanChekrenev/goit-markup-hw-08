@@ -539,6 +539,10 @@ a {
   margin-bottom: 16px;
 }
 
+.our-team__foto {
+  object-fit: contain;
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 36px;
