@@ -1,5 +1,10 @@
 .section.we-do {
+  display: none;
   padding-top: 0px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .we-do__title {
   font-weight: 700;

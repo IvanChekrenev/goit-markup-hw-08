@@ -287,7 +287,7 @@ a {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1600px) {
+@media screen and (min-width: 769px) and (max-width: 2200px) {
   .hero__text {
     font-style: normal;
     font-weight: 900;
@@ -395,7 +395,14 @@ a {
 }
 
 .section.we-do {
+  display: none;
   padding-top: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.we-do {
+    display: block;
+  }
 }
 
 .we-do__title {
