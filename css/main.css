@@ -252,7 +252,7 @@ a {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -260,31 +260,31 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-desktop2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop2x.jpg);
   }
 }
 
@@ -496,6 +496,8 @@ a {
 @media screen and (max-width: 1199px) {
   .our-team__list {
     margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -509,6 +511,7 @@ a {
 @media screen and (min-width: 1200px) {
   .our-team__list {
     display: flex;
+    margin: -15px;
     justify-content: space-between;
   }
 }
@@ -519,12 +522,6 @@ a {
   border-radius: 0px 0px 4px 4px;
   margin: 15px;
   text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .our-team__item {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -645,6 +642,7 @@ a {
   .container__footer {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -654,9 +652,9 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .wrap-logo-addres {
-    margin-left: 61px;
+    margin-bottom: 60px;
   }
 }
 
@@ -687,33 +685,18 @@ a {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 767px) {
-  .adress__list {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .wrap-logo-addres__join {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
-}
-
-.join {
-  margin-right: 93px;
 }
 
 @media screen and (max-width: 767px) {
   .join {
     text-align: center;
     margin-right: 0px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .join {
-    margin-left: 165px;
   }
 }
 
@@ -1069,6 +1052,10 @@ a {
   margin-right: 8px;
 }
 
+.filter__item:nth-child(-n + 3) {
+  margin-bottom: 21px;
+}
+
 .filter__btn {
   font-weight: 500;
   font-size: 16px;
@@ -1103,6 +1090,12 @@ a {
 
 .example__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .example__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .example__item:hover, .example__item:focus {

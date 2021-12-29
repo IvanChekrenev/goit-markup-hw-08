@@ -18,6 +18,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -25,9 +26,8 @@
   @media screen and (min-width: 1200px) {
     margin-right: 63px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 61px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -58,15 +58,10 @@
   margin-bottom: 9px;
 }
 
-.adress__list {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-}
-
 .wrap-logo-addres__join {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
